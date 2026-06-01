@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>NaroMC V4</title>
+<style>
+:root{
+--bg:#050505;
+--card:#101010;
+--border:#202020;
+--orange:#ff8c1a;
+--gold:#ffcc4d;
+--text:#f5f5f5;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:tahoma}
+html{scroll-behavior:smooth}
+body{
+background:linear-gradient(180deg,#050505,#0a0a0a,#050505);
+color:var(--text);
+}
+header{
+position:fixed;top:0;width:100%;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+padding:15px 25px;
+display:flex;justify-content:space-between;align-items:center;
+border-bottom:1px solid var(--border);
+z-index:1000;
+}
+.logo{
+font-size:32px;font-weight:bold;
+background:linear-gradient(90deg,var(--orange),var(--gold));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+nav a{
+color:#fff;text-decoration:none;margin:0 10px;
+}
+.hero{
+min-height:100vh;
+display:flex;justify-content:center;align-items:center;
+text-align:center;padding:120px 20px;
+}
+.hero h1{
+font-size:70px;
+background:linear-gradient(90deg,var(--orange),var(--gold));
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.btn{
+display:inline-block;
+padding:13px 22px;
+border-radius:12px;
+background:linear-gradient(90deg,var(--orange),var(--gold));
+color:#111;text-decoration:none;font-weight:bold;
+margin:8px;
+}
+.section{max-width:1200px;margin:auto;padding:80px 20px}
+.title{text-align:center;font-size:42px;color:var(--gold);margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{
+background:var(--card);
+border:1px solid var(--border);
+padding:25px;border-radius:18px;text-align:center;
+}
+.price{color:var(--gold);font-size:20px;font-weight:bold}
+.status{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:25px}
+.box{
+background:var(--card);
+border:1px solid var(--border);
+padding:20px;border-radius:18px;width:220px;
+}
+.num{font-size:40px;color:var(--gold)}
+.off{font-size:26px;color:#ff5252}
+.faq{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:15px;
+margin-bottom:12px;
+overflow:hidden;
+}
+.faq-q{
+padding:18px;
+cursor:pointer;
+font-weight:bold;
+}
+.faq-a{
+max-height:0;
+overflow:hidden;
+transition:.3s;
+padding:0 18px;
+color:#ccc;
+}
+.faq.active .faq-a{
+max-height:200px;
+padding:18px;
+}
+footer{text-align:center;padding:40px;opacity:.7}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">NaroMC</div>
+<nav>
+<a href="#">خانه</a>
+<a href="#modes">گیم مودها</a>
+<a href="#shop">فروشگاه</a>
+<a href="#faq">سوالات</a>
+<a href="https://rubika.ir/Naro_MC">روبیکا</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>به سرور NaroMC خوش آمدید</h1>
+<p>🚧 سرور در حال توسعه است و به زودی افتتاح خواهد شد</p>
+<p style="margin-top:10px">🎮 Survival • SkyMine • BedWars</p>
+<p style="margin-top:10px;color:var(--gold)">📡 play.naromc.ir</p>
+
+<a class="btn" href="https://rubika.ir/Naro_MC">ورود به روبیکا</a>
+<a class="btn" href="#shop">فروشگاه</a>
+
+<div class="status">
+<div class="box"><div>بازیکنان آنلاین</div><div class="num">0</div></div>
+<div class="box"><div>وضعیت سرور</div><div class="off">🔴 خاموش</div></div>
+</div>
+</div>
+</section>
+
+<section id="modes" class="section">
+<div class="title">🎮 گیم مودها</div>
+<div class="grid">
+<div class="card">🛡️ Survival<br><br>به زودی</div>
+<div class="card">⛏️ SkyMine<br><br>به زودی</div>
+<div class="card">🛏️ BedWars<br><br>به زودی</div>
+</div>
+</section>
+
+<section id="shop" class="section">
+<div class="title">👑 فروشگاه</div>
+<div class="grid">
+<div class="card"><h3>👑 Eternal</h3><p class="price">550,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+<div class="card"><h3>💠 Ultimate</h3><p class="price">350,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+<div class="card"><h3>🚀 Premium</h3><p class="price">220,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+<div class="card"><h3>💎 Diamond</h3><p class="price">170,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+<div class="card"><h3>🔷 Platinum</h3><p class="price">110,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+<div class="card"><h3>🔹 Basik</h3><p class="price">45,000 تومان</p><a class="btn" href="https://rubika.ir/Naro_MC">خرید از روبیکا</a></div>
+</div>
+</section>
+
+<section id="faq" class="section">
+<div class="title">❓ سوالات متداول</div>
+<div class="faq"><div class="faq-q">آی‌پی سرور چیست؟</div><div class="faq-a">play.naromc.ir</div></div><div class="faq"><div class="faq-q">سرور چه زمانی افتتاح می‌شود؟</div><div class="faq-a">به زودی.</div></div><div class="faq"><div class="faq-q">گیم مودها چیست؟</div><div class="faq-a">Survival، SkyMine و BedWars.</div></div><div class="faq"><div class="faq-q">از چه نسخه‌ای پشتیبانی می‌شود؟</div><div class="faq-a">بعداً اعلام می‌شود.</div></div><div class="faq"><div class="faq-q">آیا خرید رنک دائمی است؟</div><div class="faq-a">اطلاعات کامل بعد از افتتاح منتشر می‌شود.</div></div><div class="faq"><div class="faq-q">چگونه با پشتیبانی ارتباط بگیریم؟</div><div class="faq-a">از طریق روبیکا.</div></div><div class="faq"><div class="faq-q">آیا سرور برای موبایل قابل استفاده است؟</div><div class="faq-a">اطلاعات بعداً اعلام می‌شود.</div></div><div class="faq"><div class="faq-q">آیا ایونت برگزار می‌شود؟</div><div class="faq-a">بله.</div></div><div class="faq"><div class="faq-q">آیا جذب استاف دارید؟</div><div class="faq-a">بعد از افتتاح اطلاع‌رسانی می‌شود.</div></div><div class="faq"><div class="faq-q">آیا سرور لگ دارد؟</div><div class="faq-a">هدف ما تجربه روان است.</div></div><div class="faq"><div class="faq-q">قوانین سرور کجاست؟</div><div class="faq-a">به زودی منتشر می‌شود.</div></div><div class="faq"><div class="faq-q">انتقال رنک امکان‌پذیر است؟</div><div class="faq-a">بعداً اعلام می‌شود.</div></div><div class="faq"><div class="faq-q">فروشگاه چه زمانی فعال می‌شود؟</div><div class="faq-a">همزمان با افتتاح.</div></div>
+</section>
+<footer>NaroMC © 2025</footer>
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+q.onclick=()=>q.parentElement.classList.toggle('active');
+});
+</script>
+</body></html>
